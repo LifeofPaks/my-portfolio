@@ -1,4 +1,52 @@
 .home {
   background: #000;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+
+  .details {
+    .imgLayer {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #00000063;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
+    }
+    .displayImg {
+      width: 100vw;
+      position: fixed;
+      top: -15rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      filter: grayscale(1);
+      scale: 1.4;
+    }
+
+    .title {
+      font-size: 9rem;
+      color: transparent;
+      -webkit-text-stroke: 1px #fff;
+      // margin-left: -30rem;
+      line-height: 8rem;
+      width: 800px;
+    }
+
+    .descWraps{
+      .desc {
+        font-size: 9rem;
+
+        span{
+          margin-left: 10rem;
+          margin-right: 2rem;
+        }
+      }
+    }
+   
+  }
 }
