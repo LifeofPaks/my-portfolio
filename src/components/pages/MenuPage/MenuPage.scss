@@ -1,0 +1,95 @@
+@import "../../../styles/Responsive.scss";
+
+.menuPage {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  color: #fff;
+  background: #11141b;
+  z-index: 10;
+  display: flex;
+  align-items: flex-start;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.3s;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    width: 100vw;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .navLinks {
+    width: 60%;
+    padding-left: 10rem;
+    padding-top: 10rem;
+    
+    .linksWrapper{
+        width: max-content;
+
+        &:hover{
+
+            .link{
+                opacity: .6;
+            }
+
+        }
+        
+
+    .link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 11px;
+        margin-bottom: 2rem;
+        color: #ffffffbb;
+        transition: .3s;
+
+        &:hover{
+            opacity: 1;
+        }
+  
+        span {
+          font-size: 30px;
+          color: #fff;
+        }
+      }
+    }
+
+   
+
+  }
+
+  .contactInfo {
+    padding-top: 10rem;
+    border-left: 0.1px solid #ffffff3b;
+    height: 100%;
+    padding-left: 2rem;
+
+    li {
+      margin-bottom: 2rem;
+      font-size: 13px;
+
+      p {
+        font-weight: bold;
+
+        span {
+          font-weight: normal;
+          color: #ffffffbb;
+          display: block;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

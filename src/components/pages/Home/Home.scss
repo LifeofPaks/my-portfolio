@@ -10,7 +10,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: #00000063;
+      background: #0000009c;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -20,12 +20,12 @@
     .displayImg {
       width: 100vw;
       position: fixed;
-      top: -15rem;
+      top: 0;
       bottom: 0;
       left: 0;
       right: 0;
-      filter: grayscale(1);
-      scale: 1.4;
+      height: 100vh;
+      object-fit: cover;
     }
 
     .title {
@@ -34,7 +34,7 @@
       -webkit-text-stroke: 1px #fff;
       // margin-left: -30rem;
       line-height: 8rem;
-      width: 800px;
+      width: 900px;
     }
 
     .descWraps{

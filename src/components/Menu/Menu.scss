@@ -1,16 +1,69 @@
-.menu{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: #fff;
-    cursor: pointer;
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  cursor: pointer;
 
-    img{
-        width: 20px;
+  &:hover {
+    
+    .menuText{
+
+        span {
+              animation-name: appear;
+              animation-duration: .5s;
+              animation-timing-function: ease-out;
+
+              &:nth-of-type(2){
+                animation-delay: .1s;
+              }
+
+              &:nth-of-type(3){
+                animation-delay: .15s;
+              }
+
+              &:nth-of-type(4){
+                animation-delay: .2s;
+              }
+        }
+    }
+  }
+
+  img {
+    width: 20px;
+  }
+
+  .menuText {
+    font-weight: 500;
+    font-size: 13px;
+
+   
+
+    span {
+      transition: 0.3s;
+      position: relative;
+      display: inline-block;
+    }
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    70% {
+      opacity: 1;
+      transform: translateY(-5px);
     }
 
-    p{
-        font-weight: 500;
-        font-size: 13px;
+    85% {
+      opacity: 1;
+      transform: translateY(5px);
     }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }

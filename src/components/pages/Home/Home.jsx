@@ -5,6 +5,7 @@ import { displayData } from "../../../helpers/data/data";
 import { AppContext } from "../../../helpers/ContextApi/AppContext";
 import PageSlider from "../../PageSlider/PageSlider";
 import { Link } from "react-router-dom";
+import MenuPage from "../MenuPage/MenuPage";
 
 const Home = () => {
   const { value, setValue, nextSlide, prevSlide } = useContext(AppContext);
@@ -23,6 +24,7 @@ const Home = () => {
         </div>
       </Link>
       <PageSlider />
+      <MenuPage/>
     </div>
   );
 };

@@ -1,0 +1,24 @@
+.cursor {
+  .cursorDot {
+    width: 5px;
+    height: 5px;
+    background: rgb(150, 215, 52);
+    border-radius: 50%;
+  }
+
+  .cursorOutline {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(150, 215, 52);
+  }
+  .cursorOutline,
+  .cursorDot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1000;
+  }
+}
